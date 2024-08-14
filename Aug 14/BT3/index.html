@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm Phần tử vào Danh sách</title>
+    <script>
+        function addListItem() {
+            const newItem = document.createElement("li");
+            newItem.textContent = "Phần tử mới";
+            const list = document.getElementById("list");
+            list.appendChild(newItem);
+        }
+        window.onload = addListItem;
+    </script>
+</head>
+
+<body>
+    <ul id="list">
+        <li>Phần tử đầu tiên</li>
+        <li>Phần tử thứ hai</li>
+    </ul>
+</body>
+
+</html>

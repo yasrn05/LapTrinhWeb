@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay đổi Nội dung DOM</title>
+    <script>
+        function changeContent() {
+            document.getElementById("title").innerText = "Hello, DOM!";
+        }
+
+        window.onload = changeContent;
+    </script>
+</head>
+
+<body>
+    <h1 id="title">Nội dung ban đầu</h1>
+</body>
+
+</html>

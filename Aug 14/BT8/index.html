@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo Bảng bằng JavaScript</title>
+    <script>
+        function createTable() {
+            const table = document.createElement("table");
+            table.style.borderCollapse = "collapse";
+            for (let i = 0; i < 3; i++) {
+                const row = document.createElement("tr");
+
+                for (let j = 0; j < 3; j++) {
+                    const cell = document.createElement("td");
+                    cell.textContent = `Hàng ${i + 1}, Cột ${j + 1}`;
+                    cell.style.border = "1px solid black";
+                    cell.style.padding = "8px";
+                    row.appendChild(cell);
+                }
+                table.appendChild(row);
+            }
+            const container = document.getElementById("table-container");
+            container.appendChild(table);
+        }
+        window.onload = createTable;
+    </script>
+</head>
+
+<body>
+    <div id="table-container"></div>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xóa Phần tử khỏi DOM</title>
+    <script>
+        function removeElement() {
+            const element = document.getElementById("remove-me");
+            if (element) {
+                element.remove();
+            }
+        }
+        window.onload = removeElement;
+    </script>
+</head>
+
+<body>
+    <div id="remove-me">Phần tử này sẽ bị xóa</div>
+    <p>Phần tử khác trong trang</p>
+</body>
+
+</html>

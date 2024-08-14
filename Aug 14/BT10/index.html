@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cập nhật Nội dung các Phần tử</title>
+    <script>
+        function updateItems() {
+            const items = document.querySelectorAll(".item");
+            items.forEach(item => {
+                item.textContent = "Updated item";
+            });
+        }
+        window.onload = updateItems;
+    </script>
+</head>
+
+<body>
+    <div class="item">Phần tử item 1</div>
+    <div class="item">Phần tử item 2</div>
+    <div class="item">Phần tử item 3</div>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị Thông báo khi Nhấp vào Nút</title>
+    <script>
+        function showAlert() {
+            alert("Bạn đã nhấp vào nút!");
+        }
+        window.onload = function () {
+            const button = document.getElementById("btn");
+            if (button) {
+                button.addEventListener("click", showAlert);
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <button id="btn">Nhấp vào tôi</button>
+</body>
+
+</html>

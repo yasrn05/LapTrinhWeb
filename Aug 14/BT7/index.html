@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cập nhật Nội dung các Thẻ <p>
+    </title>
+    <script>
+        function updateParagraphs() {
+            const paragraphs = document.querySelectorAll("p");
+            paragraphs.forEach(paragraph => {
+                paragraph.textContent = "Updated paragraph";
+            });
+        }
+        window.onload = updateParagraphs;
+    </script>
+</head>
+
+<body>
+    <p>Đoạn văn bản đầu tiên.</p>
+    <p>Đoạn văn bản thứ hai.</p>
+    <p>Đoạn văn bản thứ ba.</p>
+</body>
+
+</html>

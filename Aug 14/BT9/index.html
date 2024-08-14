@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đếm Phần tử <div>
+    </title>
+    <script>
+        function countDivs() {
+            const divs = document.querySelectorAll("div");
+            const count = divs.length;
+            const result = document.createElement("p");
+            result.textContent = `Số lượng phần tử <div> trên trang là: ${count}`;
+            document.body.appendChild(result);
+        }
+        window.onload = countDivs;
+    </script>
+</head>
+
+<body>
+    <div>Đây là một div.</div>
+    <div>Đây là một div khác.</div>
+</body>
+
+</html>

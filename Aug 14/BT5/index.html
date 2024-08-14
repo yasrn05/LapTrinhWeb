@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay đổi Thuộc tính src của Hình ảnh</title>
+    <script>
+        function changeImageSrc() {
+            const image = document.getElementById("image");
+            image.src = "new-image.jpeg";
+        }
+        window.onload = changeImageSrc;
+    </script>
+</head>
+
+<body>
+    <img id="image" src="old-image.jpg" alt="Hình ảnh cũ">
+</body>
+
+</html>
